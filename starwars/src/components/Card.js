@@ -23,11 +23,13 @@ const CardSubtitles = styled.div`
     margin-right: 2%;
 `;
 
+
 const Card = props => {
     return (
         <CardDiv>
-            <h2>{props.name}</h2>
+            <h2>{props.name}{props.title}</h2>
             <CardSubtitles>
+                <p>{props.opening}</p>
                 <p>Born: {props.birth_year}</p>
                 <p>Height: {props.height} cm</p>
                 <p>Mass: {props.mass} kg</p>
