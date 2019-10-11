@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+    -- React JS is a commonly used library for building apps. React has a virtual DOM which interacts with the actual DOM for us.  It’s great for large-scale applications in that it offloads a lot of state the apps use from the DOM.  It solves the problem of interacting and updating the DOM when data changes.
+
 - [ ] What does it mean to _think_ in react?
+
+    -- one way of thinking in React is to breakdown the UI into a component hierarchy.  Each element should be separated as its own component such that each element is unique and ideally doing one thing.
 
 - [ ] Describe state.
 
+    -- State is basically the data on an app. Depending on the app’s functionality, the data is subject to change.  For example, a counter may increase with each button click.  The state is changing/incrementing with each click.  A simpler example would be a boolean state - an app displaying a light as either on (true) or off (false).  The state can change back and forth, over and over, depending on how we code the app.
+
 - [ ] Describe props.
 
+    -- props are properties that allow us to pass any value, function or information held on state to child components.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+    -- anything that affects something outside the scope of the function being executed. They can cause components to return different outputs for the same state and props.  One way to sync the effects in a React component to state changes is being fetching data from an API and passing information from that API as state or props.
 
 ## Project Set Up
 
